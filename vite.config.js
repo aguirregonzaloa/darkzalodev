@@ -1,3 +1,6 @@
 export default {
-    "base": "/darkzalodev/"
-  }
+  base: "/darkzalodev/",
+  server: {
+    host: true,
+  },
+}
