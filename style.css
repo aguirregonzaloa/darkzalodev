@@ -3,7 +3,22 @@
 @tailwind utilities;
 
 header {
-  @apply bg-slate-700 flex;
+  @apply flex flex-col justify-center items-center w-full;
+  background-image: linear-gradient(
+      to top,
+      rgba(57, 58, 65, 0.52),
+      rgba(78, 78, 78, 0.52)
+    ),
+    url("./img/pc-medium.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vw;
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    height: 75vw;
+  }
 }
 
 .btn {
@@ -14,13 +29,19 @@ header {
 }
 
 .footer {
-  @apply bg-slate-400 flex flex-row place-content-between place-items-center;
+  @apply bg-slate-400  place-content-between place-items-center;
 }
 
 .heading-secondary {
-  @apply text-gray-500 font-medium;
+  @apply text-gray-100 font-medium text-2xl;
 }
 
 #projects img {
   @apply max-w-xs sm:w-full;
 }
+
+/* @media screen and (max-width: 480px) {
+  footer ul {
+    flex-direction: column;
+  }
+} */

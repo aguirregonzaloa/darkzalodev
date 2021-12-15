@@ -6,93 +6,102 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>DarkzaloDev</title>
     </head>
-    <body class="px-0 sm:px-10 bg-slate-300">
-        <nav
-            class="
-                flex
-                justify-between
-                items-center
-                bg-slate-300
-                fixed
-                w-screen
-                sm:relative sm:w-full sm:h-full sm:flex-row
-            "
-        >
-            <div class="w-28 self-center">
-                <img src="img/logo.png" alt="logo" />
-            </div>
-            <button class="p-2 rounded-lg md:hidden" id="navbtn">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    class="h-10 fill-current"
-                    viewBox="0 0 16 16"
-                >
-                    <path
-                        fill-rule="evenodd"
-                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                    />
-                </svg>
-            </button>
-
-            <ul
-                id="option"
+    <body>
+        <div class="relative">
+            <nav
                 class="
-                    flex-col
-                    place-items-center
-                    sm:flex-row
-                    bg-gray-50
-                    absolute
-                    sm:relative
-                    top-full
-                    left-1/2
+                    flex
+                    justify-between
+                    items-center
+                    bg-[#191919]
+                    text-white
+                    fixed
+                    top-0
+                    left-0
                     w-screen
-                    h-screen
-                    -translate-x-1/2
-                    hidden
-                    md:flex
-                    sm:top-0 sm:left-0 sm:translate-x-0 sm:h-fit sm:w-fit
+                    sm:relative sm:w-full sm:h-full sm:flex-row
                 "
             >
-                <li class="m-5">
-                    <a class="text-blue-900 hover:text-blue-600 cursor-pointer"
-                        >Home</a
+                <div class="w-28 self-center">
+                    <img src="img/logo.png" alt="logo" />
+                </div>
+                <button class="p-2 rounded-lg md:hidden" id="navbtn">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        class="h-10 fill-current"
+                        viewBox="0 0 16 16"
                     >
-                </li>
-                <li class="m-5">
-                    <a class="text-blue-900 hover:text-blue-600 cursor-pointer"
-                        >Projects</a
-                    >
-                </li>
-                <li class="m-5">
-                    <a class="text-blue-900 hover:text-blue-600 cursor-pointer"
-                        >About me</a
-                    >
-                </li>
-            </ul>
-        </nav>
-        <header class="flex flex-col sm:flex-row">
+                        <path
+                            fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                        />
+                    </svg>
+                </button>
+
+                <ul
+                    id="option"
+                    class="
+                        flex-col
+                        place-items-center
+                        sm:flex-row
+                        absolute
+                        sm:relative
+                        top-full
+                        left-1/2
+                        w-screen
+                        h-screen
+                        -translate-x-1/2
+                        hidden
+                        md:flex
+                        sm:top-0 sm:left-0 sm:translate-x-0 sm:h-fit sm:w-fit
+                        bg-[#191919]
+                        text-white
+                    "
+                >
+                    <li class="m-5">
+                        <a class="hover:text-blue-600 cursor-pointer">Home</a>
+                    </li>
+                    <li class="m-5">
+                        <a class="hover:text-blue-600 cursor-pointer"
+                            >Projects</a
+                        >
+                    </li>
+                    <li class="m-5">
+                        <a class="hover:text-blue-600 cursor-pointer"
+                            >About me</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <header class="flex flex-col sm:flex-row mt-28 pb-9 sm:mt-0 sm:pb-0">
             <div
                 class="sm:w-3/6 flex flex-col justify-center place-items-center"
             >
-                <h1 class="text-3xl font-bold underline">Gonzalo Aguirre</h1>
-                <h2 class="heading-secondary">FrontEnd</h2>
+                <h1 class="text-3xl font-bold mb-2 text-white">
+                    Gonzalo Aguirre
+                </h1>
+                <h2 class="heading-secondary mb-2">FrontEnd</h2>
                 <button class="btn btn-sky">Contact</button>
             </div>
-            <img class="sm:w-3/6" src="./img/pc-medium.jpg" alt="PC" />
         </header>
 
         <section id="projects">
-            <div class="flex flex-col bg-blue-50 sm:p-5">
+            <div class="flex flex-col bg-blue-50 sm:p-5 w-full">
                 <h2
                     class="text-5xl text-center mb-5 text-neutral-500 underline"
                 >
                     Projects
                 </h2>
                 <div class="flex flex-col sm:flex-row">
-                    <img src="./img/pc-small.jpg" alt="" />
+                    <img
+                        class="sm:w-full w-auto self-center"
+                        src="./img/pc-small.jpg"
+                        alt=""
+                    />
                     <div class="p-0 sm:p-5 flex flex-col justify-center">
-                        <h3>Nombre Proyecto:</h3>
+                        <h3 class="mt-5 mb-5">Nombre Proyecto:</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
@@ -108,9 +117,13 @@
                 </div>
 
                 <div class="flex flex-col sm:flex-row mt-5">
-                    <img src="./img/pc-small.jpg" alt="" />
+                    <img
+                        class="sm:w-full w-auto self-center"
+                        src="./img/pc-small.jpg"
+                        alt=""
+                    />
                     <div class="p-0 sm:p-5 flex flex-col justify-center">
-                        <h3>Nombre Proyecto:</h3>
+                        <h3 class="mt-5 mb-5">Nombre Proyecto:</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
@@ -126,9 +139,13 @@
                 </div>
 
                 <div class="flex flex-col sm:flex-row mt-5">
-                    <img src="./img/pc-small.jpg" alt="" />
+                    <img
+                        class="sm:w-full w-auto self-center"
+                        src="./img/pc-small.jpg"
+                        alt=""
+                    />
                     <div class="p-0 sm:p-5 flex flex-col justify-center">
-                        <h3>Nombre Proyecto:</h3>
+                        <h3 class="mt-5 mb-5">Nombre Proyecto:</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
@@ -198,10 +215,10 @@
             </div>
         </section>
 
-        <footer class="footer p-5">
-            Copyright &copy; for Gonzalo Aguirre
+        <footer class="footer p-5 flex flex-col sm:flex-row">
+            <h2>Copyright &copy; for Gonzalo Aguirre</h2>
 
-            <ul class="flex">
+            <ul class="flex flex-col sm:flex-row">
                 <li class="m-2"><a href="#">github</a></li>
                 <li class="m-2"><a href="#">linkedid</a></li>
                 <li class="m-2"><a href="#">twitter</a></li>
