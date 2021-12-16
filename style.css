@@ -5,9 +5,10 @@
 header {
   @apply flex flex-col justify-center items-center w-full;
   background-image: linear-gradient(
-      to top,
-      rgba(57, 58, 65, 0.52),
-      rgba(78, 78, 78, 0.52)
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.8),
+      rgba(78, 78, 78, 0.72)
     ),
     url("./img/pc-medium.jpg");
   background-size: cover;
@@ -28,10 +29,6 @@ header {
   @apply text-white bg-slate-400  hover:bg-slate-500;
 }
 
-.footer {
-  @apply bg-slate-400  place-content-between place-items-center;
-}
-
 .heading-secondary {
   @apply text-gray-100 font-medium text-2xl;
 }
@@ -45,3 +42,9 @@ header {
     flex-direction: column;
   }
 } */
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1340px;
+  }
+}
