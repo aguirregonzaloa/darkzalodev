@@ -37,14 +37,20 @@ header {
   @apply max-w-xs sm:w-full;
 }
 
-/* @media screen and (max-width: 480px) {
-  footer ul {
-    flex-direction: column;
-  }
-} */
-
 @media (min-width: 1536px) {
   .container {
     max-width: 1340px;
   }
+}
+
+h2 {
+  @apply underline text-4xl;
+}
+
+.card {
+  @apply rounded bg-slate-400 w-60 h-52 flex flex-col justify-center items-center shadow-gray-900 shadow-md;
+}
+
+.card ul li {
+  @apply mt-2 mb-2;
 }
